@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    godev:
+        image: visualdensity/godev:1.9-alpine
+        volumes:
+            - /Users/visualdensity/Dev/docker/data/godev/bin/:/go/bin:z
+            - /Users/visualdensity/Dev/docker/data/godev/src/:/go/src:z
+        command: /bin/sh -l
+        tty: true
